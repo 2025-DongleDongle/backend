@@ -119,6 +119,8 @@ CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:8000',
     'https://api.dongledongle.site',
     'https://api.dongledongle.site/',
+    'https://dongledongle.vercel.app/',
+    'https://dongledongle.vercel.app'
 ]
 
 ROOT_URLCONF = 'dongleDongle.urls'
