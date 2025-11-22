@@ -64,9 +64,8 @@
 
   {"entry_type": "EXPENSE", "date": "2025-03-30", "payment_method": "CARD", "category": "TRAVEL", "amount": 82.00, "currency_code": "EUR"},
 
-  {"entry_type": "EXPENSE", "date": "2025-03-31", "payment_method": "CARD", "category": "FOOD", "amount": 11.30, "currency_code": "EUR"}
-]
-[
+  {"entry_type": "EXPENSE", "date": "2025-03-31", "payment_method": "CARD", "category": "FOOD", "amount": 11.30, "currency_code": "EUR"},
+
   {"entry_type": "INCOME", "date": "2025-04-01", "category": "ALLOWANCE", "amount": 450000, "currency_code": "KRW"},
 
   {"entry_type": "EXPENSE", "date": "2025-04-01", "payment_method": "CARD", "category": "FOOD", "amount": 11.80, "currency_code": "EUR"},
@@ -126,9 +125,8 @@
   {"entry_type": "EXPENSE", "date": "2025-04-28", "payment_method": "CARD", "category": "FOOD", "amount": 12.10, "currency_code": "EUR"},
   {"entry_type": "EXPENSE", "date": "2025-04-29", "payment_method": "CASH", "category": "ETC", "amount": 4.60, "currency_code": "EUR"},
 
-  {"entry_type": "EXPENSE", "date": "2025-04-30", "payment_method": "CARD", "category": "FOOD", "amount": 11.40, "currency_code": "EUR"}
-]
-[
+  {"entry_type": "EXPENSE", "date": "2025-04-30", "payment_method": "CARD", "category": "FOOD", "amount": 11.40, "currency_code": "EUR"},
+
   {"entry_type": "INCOME", "date": "2025-05-01", "category": "ALLOWANCE", "amount": 450000, "currency_code": "KRW"},
 
   {"entry_type": "EXPENSE", "date": "2025-05-01", "payment_method": "CARD", "category": "FOOD", "amount": 12.00, "currency_code": "EUR"},
@@ -194,9 +192,8 @@
 
   {"entry_type": "EXPENSE", "date": "2025-05-30", "payment_method": "CARD", "category": "TRAVEL", "amount": 94.00, "currency_code": "EUR"},
 
-  {"entry_type": "EXPENSE", "date": "2025-05-31", "payment_method": "CARD", "category": "FOOD", "amount": 11.70, "currency_code": "EUR"}
-]
-[
+  {"entry_type": "EXPENSE", "date": "2025-05-31", "payment_method": "CARD", "category": "FOOD", "amount": 11.70, "currency_code": "EUR"},
+
   {"entry_type": "INCOME", "date": "2025-06-01", "category": "ALLOWANCE", "amount": 450000, "currency_code": "KRW"},
 
   {"entry_type": "EXPENSE", "date": "2025-06-01", "payment_method": "CARD", "category": "FOOD", "amount": 11.90, "currency_code": "EUR"},
