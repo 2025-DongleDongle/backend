@@ -14,6 +14,8 @@ class FeedListSerializer(serializers.ModelSerializer):
 
     like_count = serializers.SerializerMethodField()
     scrap_count = serializers.SerializerMethodField()
+    liked = serializers.SerializerMethodField()
+    scrapped = serializers.SerializerMethodField()
 
     class Meta:
         model = SummarySnapshot
@@ -33,14 +35,31 @@ class FeedListSerializer(serializers.ModelSerializer):
             "base_dispatch_krw_amount",
             "like_count",
             "scrap_count",
+            "liked",
+            "scrapped",
             "created_at",
         ]
 
+    # 좋아요 / 스크랩 count
     def get_like_count(self, obj):
         return obj.favorited_by.count()
 
     def get_scrap_count(self, obj):
         return obj.scrapped_by.count()
+
+    # 로그인한 유저가 좋아요 눌렀는지
+    def get_liked(self, obj):
+        user = self.context.get("user")
+        if not user or user.is_anonymous:
+            return False
+        return obj.favorited_by.filter(user=user).exists()
+
+    # 로그인한 유저가 스크랩 했는지
+    def get_scrapped(self, obj):
+        user = self.context.get("user")
+        if not user or user.is_anonymous:
+            return False
+        return obj.scrapped_by.filter(user=user).exists()
 
 
 class FeedDetailSerializer(serializers.ModelSerializer):

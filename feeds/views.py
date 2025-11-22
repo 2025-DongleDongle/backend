@@ -148,18 +148,21 @@ class FeedListView(APIView):
         else:
             feeds = feeds.order_by("-created_at")
 
-        serializer = FeedListSerializer(feeds, many=True)
+        serializer = FeedListSerializer(
+            feeds,
+            many=True,
+            context={"user": request.user}
+        )
         data = serializer.data
 
+        # 계산된 비용 추가
         for feed_data, snapshot in zip(data, feeds):
             user = snapshot.user
             months = get_months(snapshot.snapshot_exchange_period)
 
-            # 총 파견비용 = Ledger + BaseBudget
             total_foreign, total_krw = get_total_expense_with_budget(user)
-
-            # 평균 생활비 = Ledger만 (BaseBudget 제외)
             ledger_foreign, ledger_krw = get_total_ledger_expense(user)
+
             avg_foreign = safe_divide(ledger_foreign, months)
             avg_krw = safe_divide(ledger_krw, months)
 
@@ -356,18 +359,21 @@ class MyScrapListView(APIView):
         )
 
         snapshots = [scrap.snapshot for scrap in scraps]
-        serializer = FeedListSerializer(snapshots, many=True)
+
+        serializer = FeedListSerializer(
+            snapshots,
+            many=True,
+            context={"user": request.user}
+        )
         data = serializer.data
 
         for feed_data, snapshot in zip(data, snapshots):
             user = snapshot.user
             months = get_months(snapshot.snapshot_exchange_period)
 
-            # 총 파견비용 = Ledger + BaseBudget
             total_foreign, total_krw = get_total_expense_with_budget(user)
-
-            # 평균 생활비 = Ledger만 (BaseBudget 제외)
             ledger_foreign, ledger_krw = get_total_ledger_expense(user)
+
             avg_foreign = safe_divide(ledger_foreign, months)
             avg_krw = safe_divide(ledger_krw, months)
 
