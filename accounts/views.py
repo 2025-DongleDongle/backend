@@ -28,6 +28,12 @@ class LoginView(APIView):
 
     serializer_class = UserLoginSerializer
     def post(self, request):
+        # 로그인 시 해당 유저의 OutstandingToken 삭제
+        username = request.data.get("username")
+        user = User.objects.filter(username=username).first()
+        if user:
+            OutstandingToken.objects.filter(user=user).delete()
+
         serializer = UserLoginSerializer(data=request.data)
 
         if serializer.is_valid():
