@@ -50,7 +50,7 @@
 
   {"entry_type": "EXPENSE", "date": "2025-04-22", "payment_method": "CARD", "category": "FOOD", "amount": 8.40, "currency_code": "GBP"},
 
-  {"entry_type": "EXPENSE", "date": "2025-04-25", "payment_method": "CARD", "category": "TRAVEL",
+  {"entry_type": "EXPENSE", "date": "2025-04-25", "payment_method": "CARD", "category": "TRAVEL", "amount": 70.00, "currency_code": "GBP"},
 
   {"entry_type": "INCOME", "date": "2025-05-01", "category": "ALLOWANCE", "amount": 450000, "currency_code": "KRW"},
 
