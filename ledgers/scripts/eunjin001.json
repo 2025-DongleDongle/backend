@@ -33,9 +33,8 @@
   {"entry_type": "EXPENSE", "date": "2025-03-28", "payment_method": "CARD", "category": "TRANSPORT", "amount": 2.75, "currency_code": "USD"},
   {"entry_type": "EXPENSE", "date": "2025-03-29", "payment_method": "CASH", "category": "FOOD", "amount": 9.90, "currency_code": "USD"},
   {"entry_type": "EXPENSE", "date": "2025-03-30", "payment_method": "CARD", "category": "TRAVEL", "amount": 80.00, "currency_code": "USD"},
-  {"entry_type": "EXPENSE", "date": "2025-03-31", "payment_method": "CARD", "category": "FOOD", "amount": 12.50, "currency_code": "USD"}
-]
-[
+  {"entry_type": "EXPENSE", "date": "2025-03-31", "payment_method": "CARD", "category": "FOOD", "amount": 12.50, "currency_code": "USD"},
+  
   {"entry_type": "INCOME", "date": "2025-04-01", "category": "ALLOWANCE", "amount": 500000, "currency_code": "KRW"},
 
   {"entry_type": "EXPENSE", "date": "2025-04-01", "payment_method": "CARD", "category": "FOOD", "amount": 13.20, "currency_code": "USD"},
@@ -90,9 +89,7 @@
   {"entry_type": "EXPENSE", "date": "2025-04-28", "payment_method": "CARD", "category": "SHOPPING", "amount": 48.00, "currency_code": "USD"},
 
   {"entry_type": "EXPENSE", "date": "2025-04-29", "payment_method": "CARD", "category": "FOOD", "amount": 11.90, "currency_code": "USD"},
-  {"entry_type": "EXPENSE", "date": "2025-04-30", "payment_method": "CASH", "category": "FOOD", "amount": 10.20, "currency_code": "USD"}
-]
-[
+  {"entry_type": "EXPENSE", "date": "2025-04-30", "payment_method": "CASH", "category": "FOOD", "amount": 10.20, "currency_code": "USD"},
   {"entry_type": "INCOME", "date": "2025-05-01", "category": "ALLOWANCE", "amount": 500000, "currency_code": "KRW"},
 
   {"entry_type": "EXPENSE", "date": "2025-05-01", "payment_method": "CARD", "category": "FOOD", "amount": 12.60, "currency_code": "USD"},
@@ -150,9 +147,7 @@
   {"entry_type": "EXPENSE", "date": "2025-05-28", "payment_method": "CARD", "category": "FOOD", "amount": 12.90, "currency_code": "USD"},
   {"entry_type": "EXPENSE", "date": "2025-05-29", "payment_method": "CARD", "category": "FOOD", "amount": 11.50, "currency_code": "USD"},
   {"entry_type": "EXPENSE", "date": "2025-05-30", "payment_method": "CARD", "category": "TRAVEL", "amount": 90.00, "currency_code": "USD"},
-  {"entry_type": "EXPENSE", "date": "2025-05-31", "payment_method": "CARD", "category": "FOOD", "amount": 13.60, "currency_code": "USD"}
-]
-[
+  {"entry_type": "EXPENSE", "date": "2025-05-31", "payment_method": "CARD", "category": "FOOD", "amount": 13.60, "currency_code": "USD"},
   {"entry_type": "INCOME", "date": "2025-06-01", "category": "ALLOWANCE", "amount": 500000, "currency_code": "KRW"},
 
   {"entry_type": "EXPENSE", "date": "2025-06-01", "payment_method": "CARD", "category": "FOOD", "amount": 12.80, "currency_code": "USD"},
