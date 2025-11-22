@@ -1,0 +1,89 @@
+
+
+[
+  {"entry_type": "INCOME", "date": "2025-03-01", "category": "ALLOWANCE", "amount": 500000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-01", "payment_method": "CARD", "category": "FOOD", "amount": 16.50, "currency_code": "CAD"},
+  {"entry_type": "EXPENSE", "date": "2025-03-02", "payment_method": "CARD", "category": "TRANSPORT", "amount": 3.15, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-03", "payment_method": "CASH", "category": "FOOD", "amount": 14.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-05", "payment_method": "CARD", "category": "SHOPPING", "amount": 32.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-07", "payment_method": "CARD", "category": "FOOD", "amount": 15.30, "currency_code": "CAD"},
+  {"entry_type": "EXPENSE", "date": "2025-03-07", "payment_method": "CARD", "category": "STUDY_MATERIALS", "amount": 22000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-10", "payment_method": "CARD", "category": "HOUSING", "amount": 880.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-12", "payment_method": "CARD", "category": "FOOD", "amount": 17.80, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-15", "payment_method": "CARD", "category": "TRANSPORT", "amount": 3.10, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-17", "payment_method": "CARD", "category": "SHOPPING", "amount": 54.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-19", "payment_method": "CARD", "category": "FOOD", "amount": 16.20, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-22", "payment_method": "CARD", "category": "TRAVEL", "amount": 98.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-25", "payment_method": "CASH", "category": "ETC", "amount": 7.00, "currency_code": "CAD"},
+  {"entry_type": "INCOME", "date": "2025-04-01", "category": "ALLOWANCE", "amount": 500000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-01", "payment_method": "CARD", "category": "FOOD", "amount": 17.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-03", "payment_method": "CARD", "category": "TRANSPORT", "amount": 3.25, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-05", "payment_method": "CASH", "category": "FOOD", "amount": 13.80, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-07", "payment_method": "CARD", "category": "SHOPPING", "amount": 40.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-10", "payment_method": "CARD", "category": "HOUSING", "amount": 880.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-12", "payment_method": "CARD", "category": "FOOD", "amount": 18.20, "currency_code": "CAD"},
+  {"entry_type": "EXPENSE", "date": "2025-04-12", "payment_method": "CARD", "category": "STUDY_MATERIALS", "amount": 25000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-15", "payment_method": "CARD", "category": "ETC", "amount": 6.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-18", "payment_method": "CASH", "category": "FOOD", "amount": 14.90, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-22", "payment_method": "CARD", "category": "TRAVEL", "amount": 120.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-26", "payment_method": "CARD", "category": "FOOD", "amount": 17.60, "currency_code": "CAD"},
+  {"entry_type": "INCOME", "date": "2025-05-01", "category": "ALLOWANCE", "amount": 500000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-01", "payment_method": "CARD", "category": "FOOD", "amount": 16.80, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-03", "payment_method": "CARD", "category": "TRANSPORT", "amount": 3.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-05", "payment_method": "CASH", "category": "FOOD", "amount": 14.20, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-07", "payment_method": "CARD", "category": "SHOPPING", "amount": 38.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-10", "payment_method": "CARD", "category": "HOUSING", "amount": 880.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-12", "payment_method": "CARD", "category": "FOOD", "amount": 17.10, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-15", "payment_method": "CARD", "category": "ETC", "amount": 5.50, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-18", "payment_method": "CARD", "category": "TRAVEL", "amount": 85.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-22", "payment_method": "CARD", "category": "FOOD", "amount": 16.50, "currency_code": "CAD"},
+  {"entry_type": "INCOME", "date": "2025-06-01", "category": "ALLOWANCE", "amount": 500000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-01", "payment_method": "CARD", "category": "FOOD", "amount": 17.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-03", "payment_method": "CARD", "category": "TRANSPORT", "amount": 3.10, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-05", "payment_method": "CASH", "category": "FOOD", "amount": 13.60, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-07", "payment_method": "CARD", "category": "SHOPPING", "amount": 42.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-10", "payment_method": "CARD", "category": "HOUSING", "amount": 880.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-12", "payment_method": "CARD", "category": "FOOD", "amount": 17.50, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-15", "payment_method": "CARD", "category": "ETC", "amount": 6.50, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-19", "payment_method": "CARD", "category": "TRAVEL", "amount": 130.00, "currency_code": "CAD"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-22", "payment_method": "CASH", "category": "FOOD", "amount": 14.00, "currency_code": "CAD"}
+]
