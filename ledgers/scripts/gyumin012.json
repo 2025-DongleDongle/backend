@@ -45,7 +45,8 @@
 
   {"entry_type": "EXPENSE", "date": "2025-03-19", "payment_method": "CARD", "category": "TRANSPORT", "amount": 1.50, "currency_code": "EUR"},
 
-  {"entry_type": "EXPENSE",", "date": "2025-03-20", "payment_method": "CARD", "category": "FOOD", "amount": 12.10, "currency_code": "EUR"},
+  {"entry_type": "EXPENSE", "date": "2025-03-20", "payment_method": "CARD", "category": "FOOD", "amount": 12.10, "currency_code": "EUR"},
+
   {"entry_type": "EXPENSE", "date": "2025-03-20", "payment_method": "CARD", "category": "SHOPPING", "amount": 24.00, "currency_code": "EUR"},
 
   {"entry_type": "EXPENSE", "date": "2025-03-21", "payment_method": "CASH", "category": "FOOD", "amount": 9.70, "currency_code": "EUR"},
