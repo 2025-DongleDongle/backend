@@ -1,0 +1,82 @@
+[
+  {"entry_type": "INCOME", "date": "2025-03-01", "category": "ALLOWANCE", "amount": 450000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-01", "payment_method": "CARD", "category": "FOOD", "amount": 7.80, "currency_code": "GBP"},
+  {"entry_type": "EXPENSE", "date": "2025-03-03", "payment_method": "CARD", "category": "TRANSPORT", "amount": 2.40, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-05", "payment_method": "CASH", "category": "FOOD", "amount": 6.90, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-08", "payment_method": "CARD", "category": "SHOPPING", "amount": 19.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-10", "payment_method": "CARD", "category": "HOUSING", "amount": 650.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-12", "payment_method": "CARD", "category": "STUDY_MATERIALS", "amount": 27000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-15", "payment_method": "CARD", "category": "FOOD", "amount": 8.10, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-18", "payment_method": "CARD", "category": "ETC", "amount": 3.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-21", "payment_method": "CARD", "category": "TRAVEL", "amount": 43.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-03-25", "payment_method": "CARD", "category": "FOOD", "amount": 7.50, "currency_code": "GBP"},
+  {"entry_type": "INCOME", "date": "2025-04-01", "category": "ALLOWANCE", "amount": 450000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-01", "payment_method": "CARD", "category": "FOOD", "amount": 7.60, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-03", "payment_method": "CARD", "category": "TRANSPORT", "amount": 2.30, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-05", "payment_method": "CASH", "category": "FOOD", "amount": 6.30, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-08", "payment_method": "CARD", "category": "SHOPPING", "amount": 21.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-10", "payment_method": "CARD", "category": "HOUSING", "amount": 650.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-12", "payment_method": "CARD", "category": "FOOD", "amount": 7.90, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-15", "payment_method": "CARD", "category": "STUDY_MATERIALS", "amount": 25000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-18", "payment_method": "CARD", "category": "ETC", "amount": 2.80, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-22", "payment_method": "CARD", "category": "FOOD", "amount": 7.10, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-04-26", "payment_method": "CARD", "category": "TRAVEL", "amount": 55.00, "currency_code": "GBP"},
+  {"entry_type": "INCOME", "date": "2025-05-01", "category": "ALLOWANCE", "amount": 450000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-01", "payment_method": "CARD", "category": "FOOD", "amount": 7.80, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-03", "payment_method": "CARD", "category": "TRANSPORT", "amount": 2.40, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-05", "payment_method": "CASH", "category": "FOOD", "amount": 6.50, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-08", "payment_method": "CARD", "category": "SHOPPING", "amount": 18.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-10", "payment_method": "CARD", "category": "HOUSING", "amount": 650.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-12", "payment_method": "CARD", "category": "FOOD", "amount": 7.40, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-15", "payment_method": "CARD", "category": "ETC", "amount": 3.10, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-18", "payment_method": "CARD", "category": "TRAVEL", "amount": 49.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-05-22", "payment_method": "CARD", "category": "FOOD", "amount": 7.90, "currency_code": "GBP"},
+  {"entry_type": "INCOME", "date": "2025-06-01", "category": "ALLOWANCE", "amount": 450000, "currency_code": "KRW"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-01", "payment_method": "CARD", "category": "FOOD", "amount": 7.60, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-03", "payment_method": "CARD", "category": "TRANSPORT", "amount": 2.30, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-05", "payment_method": "CASH", "category": "FOOD", "amount": 6.20, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-08", "payment_method": "CARD", "category": "SHOPPING", "amount": 22.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-10", "payment_method": "CARD", "category": "HOUSING", "amount": 650.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-12", "payment_method": "CARD", "category": "FOOD", "amount": 7.80, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-15", "payment_method": "CARD", "category": "ETC", "amount": 3.40, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-18", "payment_method": "CARD", "category": "TRAVEL", "amount": 61.00, "currency_code": "GBP"},
+
+  {"entry_type": "EXPENSE", "date": "2025-06-21", "payment_method": "CASH", "category": "FOOD", "amount": 6.90, "currency_code": "GBP"}
+]
+
