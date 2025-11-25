@@ -123,6 +123,13 @@ class LivingBudgetSerializer(serializers.ModelSerializer):
     class Meta:
         model = LivingBudget
         fields = ["id", "total_amount", "items", "created_at", "updated_at"]
+        
+    def validate(self, attrs):
+        if attrs.get("total_amount") in [None, ""]:
+            raise serializers.ValidationError({
+                "total_amount": "total_amount는 필수 값입니다."
+            })
+        return attrs
 
     def create(self, validated_data):
         base_budget_data = validated_data.pop("base_budget", None)
