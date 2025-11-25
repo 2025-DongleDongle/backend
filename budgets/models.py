@@ -27,7 +27,7 @@ class BaseBudget(models.Model):
 
     #기본 파견비 합산 함수(한화 기준) 
     def update_total(self):
-        total = sum(item.get_krw_amount() for item in self.items.all())
+        total = sum((item.get_krw_amount() or 0) for item in self.items.all())
         self.total_amount_krw = total
         self.save()
         return total #한화 총액 반환

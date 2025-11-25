@@ -1,6 +1,33 @@
 from rest_framework import serializers
 from .models import *
+from accounts.models import ExchangeProfile
+from rates.views import convert_to_krw, convert_from_krw
 
+
+COUNTRY_TO_CURRENCY = {
+    "한국": "KRW",
+    "미국": "USD",
+    "일본": "JPY",
+    "독일": "EUR",
+    "프랑스": "EUR",
+    "중국": "CNY",
+    "대만": "TWD",
+    "캐나다": "CAD",
+    "이탈리아": "EUR",
+    "네덜란드": "EUR",
+    "영국": "GBP",
+    "USA": "USD",
+    "JAPAN": "JPY",
+    "KOREA": "KRW",
+    "CHINA": "CNY",
+    "TAIWAN": "TWD",
+    "CANADA": "CAD",
+    "UK": "GBP",
+    "FRANCE": "EUR",
+    "GERMANY": "EUR",
+    "NETHERLANDS": "EUR",
+    "ITALY": "EUR",
+}
 
 #기본 파견비 내 아이템 시리얼라이저 
 class BaseBudgetItemSerializer(serializers.ModelSerializer):
@@ -163,7 +190,7 @@ class LivingBudgetSerializer(serializers.ModelSerializer):
 #예산안 시리얼라이저(*Nested Serializer)
 class BudgetSerializer(serializers.ModelSerializer):
     total_budget_value = serializers.SerializerMethodField()
-    #수정해야 함 
+  
     base_budget = BaseBudgetSerializer(required=False)
     living_budget = LivingBudgetSerializer(required=False)
 
@@ -171,10 +198,6 @@ class BudgetSerializer(serializers.ModelSerializer):
         model = Budget
         fields = ["id", "user", "total_budget_value", "base_budget", "living_budget", "created_at", "updated_at"]
     
-    def get_total_budget_value(self, obj):
-        total = obj.get_total_budget()
-        obj.refresh_from_db(fields=["total_budget"])
-        return obj.total_budget
     
     def create(self, validated_data):
         base_budget_data = validated_data.pop("base_budget", None)
@@ -213,4 +236,24 @@ class BudgetSerializer(serializers.ModelSerializer):
 
         instance.save()
         return instance
+    
+
+    #총 예상 금액 변환 
+    def get_total_budget_value(self, obj):
+        #1) KRW 총액
+        total_krw = obj.get_total_budget()
+
+        #2) 파견 통화 가져오기 
+        profile = getattr(obj.user, "exchange_profile", None)
+
+        country_name = profile.exchange_country
+        target_currency = COUNTRY_TO_CURRENCY.get(country_name)
+        converted = convert_from_krw(total_krw, target_currency)
+
+        return{
+            "krw": total_krw,
+            "converted": converted
+        }
+
+        
 
