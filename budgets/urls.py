@@ -5,6 +5,7 @@ app_name = 'budgets'
 
 urlpatterns = [
     path('fill/', BudgetView.as_view(), name='budget-view'),
-    # path('base-budget/', BaseBudgetView.as_view(), name='base-budget-view'),
-    # path('living-budget/',LivingBudgetView.as_view(), name= 'living-budget-view')
+    path('base-average/', BaseAverageView.as_view(), name='base-average-view'),
+    path('living-average/',LivingAvgView.as_view(), name='living-average-view'),
+    path('total-average/', TotalAvgView.as_view(), name='total-average-view')
 ]
