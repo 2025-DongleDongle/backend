@@ -165,6 +165,8 @@ class LivingBudgetSerializer(serializers.ModelSerializer):
         for attr, value in validated_data.items():
             setattr(instance, attr, value)
         instance.save()
+        
+        incoming_etc_names = set()
 
         for item_data in items_data:
             item_type = item_data.get("type")
@@ -173,6 +175,7 @@ class LivingBudgetSerializer(serializers.ModelSerializer):
             #사용자 정의 항목이면 ETC로 강제
             if custom_name:
                 item_type = "ETC"
+                incoming_etc_names.add(custom_name)
 
             # 기존 항목 조회
             item_obj = instance.items.filter(type=item_type, custom_name=custom_name).first()
@@ -190,6 +193,12 @@ class LivingBudgetSerializer(serializers.ModelSerializer):
                     custom_name=custom_name,
                     amount=item_data.get("amount", 0)
                 )
+        
+        existing_etc_items = instance.items.filter(type="ETC")
+
+        for etc_item in existing_etc_items:
+            if etc_item.custom_name not in incoming_etc_names:
+                etc_item.delete()
 
         return instance
 
