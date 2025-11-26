@@ -92,13 +92,12 @@ class LivingBudgetItem(models.Model):
         SHOPPING = "SHOPPING", "쇼핑비"
         TRAVEL = "TRAVEL", "여행비"
         STUDY_MATERIALS = "STUDY_MATERIALS", "교재비"
-        ALLOWANCE = "ALLOWANCE", "용돈"
         ETC = "ETC", "기타" #사용자 지정 항목 저장(custom_name이 있는 항목은 자동으로 ETC로 분류)
 
     living_budget = models.ForeignKey(LivingBudget, on_delete=models.CASCADE, related_name="items")
     type = models.CharField(max_length=20, choices=LivingItem.choices)
     custom_name = models.CharField(max_length=20, blank=True, null=True) #사용자 지정 항목 
-    amount = models.DecimalField(max_digits=12, decimal_places=6)
+    amount = models.DecimalField(max_digits=12, decimal_places=6, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
