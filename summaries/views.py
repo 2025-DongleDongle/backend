@@ -408,3 +408,19 @@ class LedgerSummaryView(APIView):
                 "current_rate_krw_amount": Decimal("0.00"),
             },
         }
+
+
+class HasSummarySnapshotView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+
+        has_snapshot = SummarySnapshot.objects.filter(user=user).exists()
+
+        data = {
+            "user_id": user.username,
+            "has_summary_snapshot": has_snapshot,
+        }
+
+        return ok("가계부 요약본 생성 여부 조회 성공", data)
