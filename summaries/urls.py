@@ -7,4 +7,5 @@ urlpatterns = [
     path("snapshot/", DetailProfileView.as_view(), name="detail-profile"),
     path("ledger-summary/", LedgerSummaryView.as_view(), name="ledger-summary"),
     path("has-snapshot/", HasSummarySnapshotView.as_view(), name="has-summary-snapshot"),
+    path("latest-snapshot/", LatestSummarySnapshotView.as_view(), name="latest-summary-snapshot"),
 ]

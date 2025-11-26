@@ -424,3 +424,27 @@ class HasSummarySnapshotView(APIView):
         }
 
         return ok("가계부 요약본 생성 여부 조회 성공", data)
+
+
+class LatestSummarySnapshotView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+
+        # 최신 스냅샷으로 (수정했으면 계속 누적되어서 최신 걸로 가져오기)
+        snapshot = (
+            SummarySnapshot.objects
+            .filter(user=user)
+            .order_by('-created_at')
+            .first()
+        )
+
+        if not snapshot:
+            return ok("가계부 요약본이 없습니다.", None)
+
+        data = {
+            "snapshot_id": snapshot.id
+        }
+
+        return ok("가계부 요약본 ID 조회 성공", data)
