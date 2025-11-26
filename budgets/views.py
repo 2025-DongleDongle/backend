@@ -233,3 +233,5 @@ class TotalAvgView(APIView):
         if not data:
             return Response({"detail": "데이터 없음"}, status=404)
         return Response(data)
+
+
