@@ -102,6 +102,7 @@ class FeedDetailSerializer(serializers.ModelSerializer):
             return None
         d = obj.detail_profile
         return {
+            "monthly_spend_in_korea": d.monthly_spend_in_korea,
             "meal_frequency": d.get_meal_frequency_display(),
             "dineout_per_week": d.dineout_per_week,
             "coffee_per_week": d.coffee_per_week,
