@@ -224,8 +224,8 @@ class LedgerSummaryView(APIView):
     def get(self, request):
         user = request.user
 
-        if not hasattr(user, "summary_detail_profile"):
-            return bad("세부 프로필이 등록되어 있지 않습니다.", status_code=status.HTTP_403_FORBIDDEN)
+        # if not hasattr(user, "summary_detail_profile"):
+        #     return bad("세부 프로필이 등록되어 있지 않습니다.", status_code=status.HTTP_403_FORBIDDEN)
 
         exchange_profile = getattr(user, "exchange_profile", None)
 
