@@ -97,7 +97,7 @@ class LivingBudgetItem(models.Model):
     living_budget = models.ForeignKey(LivingBudget, on_delete=models.CASCADE, related_name="items")
     type = models.CharField(max_length=20, choices=LivingItem.choices)
     custom_name = models.CharField(max_length=20, blank=True, null=True) #사용자 지정 항목 
-    amount = models.DecimalField(max_digits=12, decimal_places=6, null=True)
+    amount = models.DecimalField(max_digits=20, decimal_places=6, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
