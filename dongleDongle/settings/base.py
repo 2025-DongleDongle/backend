@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
+    'django_extensions',
 
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
